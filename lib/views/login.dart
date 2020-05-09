@@ -13,13 +13,12 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFF5F5F5),
-        appBar: AppBar(
-          title: Text('登录/注册'),
-        ),
-        body: Builder(
-          builder: (context) => _buildLoginContent(context),
-        ));
+      backgroundColor: Color(0xFFF5F5F5),
+      appBar: AppBar(
+        title: Text('登录/注册'),
+      ),
+      body: _buildLoginContent(context),
+    );
   }
 
   Widget _buildLoginContent(BuildContext context) {
